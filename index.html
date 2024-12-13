@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Resi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cek Resi Pengiriman Hadiah Ulang Tahun</h1>
+
+        <!-- Form input resi -->
+        <form id="resi-form">
+            <label for="resi-input">Masukkan Kode Resi:</label>
+            <input type="text" id="resi-input" placeholder="Contoh: paketultahacu" required>
+            <button type="submit">Cek Resi</button>
+        </form>
+
+        <!-- Pesan error -->
+        <p id="error-message" class="hidden"></p>
+
+        <!-- Tabel untuk menampilkan data resi -->
+        <table id="resi-table" class="hidden">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody id="data-table">
+                <!-- Data akan dimasukkan secara dinamis -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
